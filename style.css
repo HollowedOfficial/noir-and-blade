@@ -1,0 +1,347 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0a0a0a;
+    color: white;
+    padding: 20px 60px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+    margin-right: -25px;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: color 0.2s ease;
+    position: relative;
+    left: -90px;
+}
+
+nav a:hover {
+    color: #aaa;
+}
+
+.hero {
+    padding: 140px 0;
+    max-width: 800px;
+    position: relative;
+}
+
+.hero h2,
+.hero p,
+.hero a {
+    animation: heroEnter 1s ease-out;
+}
+
+header {
+    animation: heroEnter 0.8s ease-out;
+}
+
+#services {
+    padding: 80px 0;
+    animation: heroEnter 1.2s ease-out;
+}
+
+.barber-pole {
+    animation: barberSpin 1.5s linear infinite;
+}
+
+@keyframes heroEnter {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #222;
+    filter: blur(120px);
+    opacity: 0.35;
+    border-radius: 50%;
+    top: 50px;
+    left: 100px;
+    z-index: -1;
+}
+
+.hero h2 {
+    font-size: 64px;
+    margin: 0 0 20px 0;
+    line-height: 1.05;
+    background: linear-gradient(90deg, #ffffff, #777777);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #aaa;
+    max-width: 500px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+button {
+    background: white;
+    color: black;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: #ddd;
+}
+
+#services {
+    padding: 80px 0;
+}
+
+#services {
+    padding-right: 180px;
+    margin-right: 90px;
+}
+
+.services-container {
+    display: flex;
+    gap: 20px;
+}
+
+.service-card {
+    background: #151515;
+    padding: 30px;
+    border-radius: 12px;
+    flex: 1;
+    border: 1px solid #333;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    border-color: white;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.service-card p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.service-card span {
+    color: #777;
+    font-size: 14px;
+}
+#about,
+#contact {
+    padding: 80px 0;
+    border-top: 1px solid #333;
+}
+
+#about h2,
+#contact h2 {
+    font-size: 40px;
+}
+
+#about p,
+#contact p {
+    color: #aaa;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+footer {
+    padding: 40px 0;
+    color: #666;
+    border-top: 1px solid #333;
+}
+
+.barber-pole {
+    position: fixed;
+    right: 25px;
+    top: 0;
+    width: 65px;
+    height: 100vh;
+
+    background: repeating-linear-gradient(
+        -45deg,
+        #e63946 0px,
+        #e63946 20px,
+        white 20px,
+        white 40px,
+        #2563eb 40px,
+        #2563eb 60px
+    );
+
+    background-size: 84.85px 84.85px;
+
+    animation:
+        barberEnter 1s ease-out,
+        barberSpin 1.5s linear infinite 1s;
+
+    z-index: 10;
+    border-radius: 10px;
+
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.08);
+   mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+);
+
+-webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+);
+}
+
+@keyframes barberEnter {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes barberSpin {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 84.85px 84.85px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .hero {
+        padding: 100px 0;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .services-container {
+        flex-direction: column;
+    }
+    }
+#services,
+#about,
+#contact {
+    padding-right: 180px;
+}
+#about,
+#contact {
+    margin-right: 90px;
+}
+#contact:target {
+    animation: contactFlash 2.5s ease-out;
+}
+
+@keyframes contactFlash {
+    0% {
+        background-color: rgba(255, 255, 255, 0.12);
+    }
+
+    30% {
+        background-color: rgba(255, 255, 255, 0.08);
+    }
+
+    70% {
+        background-color: rgba(255, 255, 255, 0.04);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+.contact-flash {
+    animation: contactFlash 2.5s ease-out;
+}
+
+@keyframes contactFlash {
+    0% {
+        background-color: rgba(255, 255, 255, 0.12);
+    }
+
+    30% {
+        background-color: rgba(255, 255, 255, 0.08);
+    }
+
+    70% {
+        background-color: rgba(255, 255, 255, 0.04);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+footer {
+    text-align: center;
+}
+
+footer span {
+    display: block;
+    margin-top: 12px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #444;
+}
