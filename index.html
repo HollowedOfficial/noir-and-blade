@@ -1,75 +1,588 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<html> <head> <title>NOIR & BLADE</title> <link rel="stylesheet" href="style.css"> </head>
+    <title>HOLLOWED — Independent Digital Studio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
 
 <body>
 
-<header>
-    <h1>NOIR & BLADE</h1>
+    <!-- HEADER -->
 
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+    <header class="site-header">
 
-<main>
+        <div class="brand">
 
-    <section class="hero">
-        <div class="barber-pole"></div>
-        <h2>Sharp cuts. No compromises.</h2>
-        <p>Premium haircuts for men.</p>
-      <a href="#contact" onclick="document.getElementById('contact').classList.add('contact-flash'); setTimeout(() => document.getElementById('contact').classList.remove('contact-flash'), 2500);">
-    <button>Book an appointment</button>
-</a>
-    </section>
+            <span class="brand-main">HOLLOWED</span>
 
-    <section id="services">
-        <h2>Services</h2>
+            <span class="brand-script">Hollowed</span>
 
-        <div class="services-container">
-
-            <div class="service-card">
-    <h3>Haircut</h3>
-    <p>€15</p>
-    <span>30 min · Clean cut & styling</span>
-</div>
-
-<div class="service-card">
-    <h3>Beard</h3>
-    <p>€10</p>
-    <span>20 min · Trim & shape</span>
-</div>
-
-<div class="service-card">
-    <h3>Haircut + Beard</h3>
-    <p>€22</p>
-    <span>45 min · Full grooming</span>
-</div>
+            <span class="brand-subtitle">
+                INDEPENDENT DIGITAL STUDIO
+            </span>
 
         </div>
-    </section>
 
-    <section id="about">
-    <h2>Built for the details.</h2>
-    <p>
-        Noir & Blade is a modern barbershop focused on clean cuts,
-        sharp fades, and classic grooming. Every appointment is about
-        precision, consistency, and leaving the chair looking your best.
-    </p>
-</section>
+        <nav class="navigation" aria-label="Main navigation">
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Phone: 06X XXX XXX</p>
-<p>Instagram: @noirandblade</p>
-    </section>
+            <a href="#selected-work">
+                Portfolio
+            </a>
 
-</main>
+            <a href="#" id="services-link">
+                Services
+            </a>
 
-<footer>
-    <p>© 2026 NOIR & BLADE</p>
-    <span>PREVIEW ONLY SITE</span>
-</footer>
-</body> </html>
+            <a href="#" id="contact-link">
+                Contact
+            </a>
+
+        </nav>
+
+        <div class="header-line"></div>
+
+    </header>
+
+
+    <!-- ABOUT -->
+
+    <main>
+
+        <section class="about-section" id="about">
+
+            <h2>ABOUT</h2>
+
+            <div class="about-text">
+
+                <p>
+                    HOLLOWED is an independent digital studio focused on creating
+                    clean, modern websites for businesses that want to stand out
+                    without shouting.
+                </p>
+
+                <p>
+                    Every project is built around simplicity, sharp design, smooth
+                    interaction, and a strong visual identity. From the first idea
+                    to the finished website, the goal is to create something that
+                    feels unique to the business behind it.
+                </p>
+
+                <p>
+                    No unnecessary clutter. No templates that feel like everyone
+                    else's. Just thoughtful design built to leave an impression.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ORDER PROCESS -->
+
+        <section class="order-process" id="order-process">
+
+            <h2>ORDER PROCESS</h2>
+
+            <div class="process-boxes">
+
+                <article class="process-box">
+
+                    <span>01</span>
+
+                    <h3>CONTACT</h3>
+
+                    <p>
+                        Send us your website requirements.
+                    </p>
+
+                </article>
+
+
+                <article class="process-box">
+
+                    <span>02</span>
+
+                    <h3>DISCUSS</h3>
+
+                    <p>
+                        Finalize your ideas and requirements.
+                    </p>
+
+                </article>
+
+
+                <article class="process-box">
+
+                    <span>03</span>
+
+                    <h3>QUOTE</h3>
+
+                    <p>
+                        Receive your custom website price.
+                    </p>
+
+                </article>
+
+
+                <article class="process-box">
+
+                    <span>04</span>
+
+                    <h3>BUILD</h3>
+
+                    <p>
+                        We turn your requirements into the finished website.
+                    </p>
+
+                </article>
+
+
+                <article class="process-box">
+
+                    <span>05</span>
+
+                    <h3>DELIVERY</h3>
+
+                    <p>
+                        Receive your completed website.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT ESTIMATES -->
+
+        <section class="estimates-section" id="estimates">
+
+            <h2>PROJECT ESTIMATES</h2>
+
+            <div class="estimate-content">
+
+                <article class="estimate-item">
+
+                    <span>PRICE RANGE</span>
+
+                    <strong>€20 — €400</strong>
+
+                    <p>
+                        Pricing depends on the complexity and requirements
+                        of each project.
+                    </p>
+
+                </article>
+
+
+                <article class="estimate-item">
+
+                    <span>QUOTE TIME</span>
+
+                    <strong>1 — 5 DAYS</strong>
+
+                    <p>
+                        Receive your project estimate after discussing
+                        your requirements.
+                    </p>
+
+                </article>
+
+
+                <article class="estimate-item">
+
+                    <span>WAITING TIME</span>
+
+                    <strong>UP TO 14 DAYS</strong>
+
+                    <p>
+                        Delivery time depends on project complexity
+                        and the current queue.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SELECTED WORK -->
+
+        <section class="selected-work" id="selected-work">
+
+            <h2>SELECTED WORK</h2>
+
+            <div class="work-grid">
+
+                <article class="work-card">
+
+                    <div class="work-card-content">
+
+                        <span class="work-label">
+                            WEBSITE PROJECT
+                        </span>
+
+                        <h3>NOIR &amp; BLADE</h3>
+
+                        <p>
+                            A dark, modern barber website concept created
+                            to explore visual identity, interactive elements,
+                            and polished web design.
+                        </p>
+
+                        <a
+    href="https://hollowedofficial.github.io/noir-and-blade/"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    View Noir & Blade
+</a>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="footer-line"></div>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                HOLLOWED
+            </div>
+
+            <div class="footer-year">
+                Est. 2026
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- SERVICES POPUP -->
+
+    <div
+        class="services-popup"
+        id="services-popup"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="services-title"
+    >
+
+        <div class="services-popup-content">
+
+            <button
+                class="popup-close services-close"
+                id="services-close"
+                type="button"
+                aria-label="Close services"
+            >
+                &times;
+            </button>
+
+            <h2 id="services-title">
+                SERVICES
+            </h2>
+
+            <div class="service-item">
+
+                <h3>WORLDWIDE SERVICES</h3>
+
+                <p>
+                    HOLLOWED provides website design services worldwide,
+                    working with businesses and individuals regardless
+                    of location.
+                </p>
+
+            </div>
+
+
+            <div class="service-item">
+
+                <h3>WEBSITES FOR ANY PURPOSE</h3>
+
+                <p>
+                    From business websites and portfolios to personal
+                    projects, every website is built around its
+                    specific purpose.
+                </p>
+
+            </div>
+
+
+            <div class="service-item">
+
+                <h3>FULLY CUSTOMIZED</h3>
+
+                <p>
+                    Every project is individually designed and built
+                    around your requirements, rather than relying
+                    on generic templates.
+                </p>
+
+            </div>
+
+
+            <div class="service-item">
+
+                <h3>CHANGES BEFORE DELIVERY</h3>
+
+                <p>
+                    Your website can be adjusted during the development
+                    process before the final version is delivered.
+                </p>
+
+            </div>
+
+
+            <div class="service-item">
+
+                <h3>AFTER DELIVERY</h3>
+
+                <p>
+                    Websites are delivered as a one-time purchase.
+                    Future changes, updates, or fixes can be requested
+                    separately and are charged depending on the work required.
+                </p>
+
+            </div>
+
+
+            <div class="service-item">
+
+                <h3>DYNAMIC PRICING</h3>
+
+                <p>
+                    Each project is priced individually based on its
+                    complexity, requirements, and the amount of work involved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CONTACT POPUP -->
+
+    <div
+        class="contact-popup"
+        id="contact-popup"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="contact-title"
+    >
+
+        <div class="contact-popup-content">
+
+            <button
+                class="popup-close contact-close"
+                id="contact-close"
+                type="button"
+                aria-label="Close contact information"
+            >
+                &times;
+            </button>
+
+            <h2 id="contact-title">
+                CONTACT
+            </h2>
+
+
+            <div class="contact-item">
+
+                <span>EMAIL</span>
+
+                <a href="mailto:hollowedsupport@gmail.com">
+                    hollowedsupport@gmail.com
+                </a>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <span>INSTAGRAM</span>
+
+                <a
+                    href="https://www.instagram.com/hollowedsupport/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    @hollowedsupport
+                </a>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <span>PHONE</span>
+
+                <p>
+                    Coming Soon
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        const servicesLink =
+            document.getElementById("services-link");
+
+        const servicesPopup =
+            document.getElementById("services-popup");
+
+        const servicesClose =
+            document.getElementById("services-close");
+
+
+        const contactLink =
+            document.getElementById("contact-link");
+
+        const contactPopup =
+            document.getElementById("contact-popup");
+
+        const contactClose =
+            document.getElementById("contact-close");
+
+
+        function openPopup(popup) {
+
+            popup.classList.add("active");
+
+            document.body.classList.add("popup-open");
+
+        }
+
+
+        function closePopup(popup) {
+
+            popup.classList.remove("active");
+
+            if (
+                !servicesPopup.classList.contains("active") &&
+                !contactPopup.classList.contains("active")
+            ) {
+
+                document.body.classList.remove("popup-open");
+
+            }
+
+        }
+
+
+        servicesLink.addEventListener("click", function(event) {
+
+            event.preventDefault();
+
+            openPopup(servicesPopup);
+
+        });
+
+
+        servicesClose.addEventListener("click", function() {
+
+            closePopup(servicesPopup);
+
+        });
+
+
+        servicesPopup.addEventListener("click", function(event) {
+
+            if (event.target === servicesPopup) {
+
+                closePopup(servicesPopup);
+
+            }
+
+        });
+
+
+        contactLink.addEventListener("click", function(event) {
+
+            event.preventDefault();
+
+            openPopup(contactPopup);
+
+        });
+
+
+        contactClose.addEventListener("click", function() {
+
+            closePopup(contactPopup);
+
+        });
+
+
+        contactPopup.addEventListener("click", function(event) {
+
+            if (event.target === contactPopup) {
+
+                closePopup(contactPopup);
+
+            }
+
+        });
+
+
+        document.addEventListener("keydown", function(event) {
+
+            if (event.key !== "Escape") {
+                return;
+            }
+
+            closePopup(servicesPopup);
+
+            closePopup(contactPopup);
+
+        });
+
+
+        document.querySelectorAll(".navigation a").forEach(function(link) {
+
+            link.addEventListener("click", function() {
+
+                if (link.getAttribute("href") !== "#") {
+
+                    closePopup(servicesPopup);
+
+                    closePopup(contactPopup);
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
